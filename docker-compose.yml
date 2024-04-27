@@ -1,0 +1,16 @@
+version: '3'
+services:
+  nginx-server:
+    build: ./Nginx
+    restart: always
+    image: nginx-server:dev
+    container_name: nginx-server    
+    ports:
+      - 80:80
+      - 443:443
+
+  python-job:
+    build: ./python-job
+    restart: always
+    image: python-job:dev
+    container_name: python-job

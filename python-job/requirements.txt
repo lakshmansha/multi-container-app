@@ -1,0 +1,2 @@
+python-dotenv==0.21.1
+azure-storage-queue==2.1.0
