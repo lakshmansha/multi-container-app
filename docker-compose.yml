@@ -3,7 +3,7 @@ services:
   nginx-server:
     build: ./Nginx
     restart: always
-    image: nginx-server:dev
+    image: nginx:dev
     container_name: nginx-server    
     ports:
       - 80:80

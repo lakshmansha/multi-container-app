@@ -3,7 +3,7 @@ services:
   nginx-server:
     build: ./Nginx
     restart: always
-    image: multicontainerstrg.azurecr.io/nginx:dev
+    image: multicontainerstrg.azurecr.io/nginx:dev27042024
     container_name: nginx-server
     ports:
       - 80:80
@@ -12,5 +12,5 @@ services:
   python-job:
     build: ./python-job
     restart: always
-    image: multicontainerstrg.azurecr.io/python-job:dev
+    image: multicontainerstrg.azurecr.io/python-job:dev27042024
     container_name: python-job
